@@ -56,16 +56,16 @@ def quiz():
         fourth_range = 4
         list1.append(fourth_range)             
 #question 3 if statements using list 3 
-    if q3 in vegtable_list[0]:
+    if q3 in months_of_the_year[0]:
         first_vegtable = 1 
         list3.append(first_vegtable)
-    if q3 in vegtable_list[1]:
+    if q3 in months_of_the_year[1]:
         second_vegtable = 2 
         list3.append(second_vegtable)
-    if q3 in vegtable_list[2]:
+    if q3 in months_of_the_year[2]:
         third_vegtable = 3
         list3.append(third_vegtable)
-    if q3 in vegtable_list[3]:
+    if q3 in months_of_the_year[3]:
         fourth_vegtable = 4
         list3.append(fourth_vegtable)
 
