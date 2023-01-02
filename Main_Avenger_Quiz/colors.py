@@ -1,1 +1,1 @@
-my_color_list = ['blue', 'green', 'black', 'red', 'gray', 'orange', 'purple', 'pink']
+my_color_list = ['blue', 'green', 'black', 'red', 'gray', 'orange', 'purple', 'pink', 'silver', 'gold']

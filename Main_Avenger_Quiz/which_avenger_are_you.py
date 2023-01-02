@@ -3,6 +3,8 @@ from colors import my_color_list
 import time
 from avengers_list1 import avenger_list
 import sys  
+from alpha_bet import american_alphabet
+from birthday_month import months_of_the_year
 #function to start the quiz questions 
 
 def stop_quiz():
@@ -21,8 +23,7 @@ def quiz():
         else:
             break
 
-    vegtable_list = ['Cucumber', 'Carrot', 'Tomato', 'Artichoke', 'Asparagus', 'Avocado', 'Beet', 'Cauliflower', 'Celeriac', 'Celery', 'Kale', 'Kohlrabi', 'Leeks', 'Peas', 'Acorn Squash', 'Butternut Squash', 'Snow Peas', 'Broccoli']
-    american_alphabet = ['a','b','c','d','e','f','g','h',"i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+               #vegtable_list = []
     list1 = [] #this is to allow the range of first name characters to be assigend to a value
     list2 = [] #this is for the colors list to assign an avenger to it 
     list3 = [] #this is the list for the vegtable questions
