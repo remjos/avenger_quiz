@@ -14,9 +14,9 @@ def stop_quiz():
 def quiz():
     while True:
         try:
-            q1 = input("What color are your eyes? ")
-            q2 = input("What is the first letter of your name? ")
-            q3 = input("What is your favorite vegtable? ")
+            q1 = input("What color are your eyes? ").lower()
+            q2 = input("What is the first letter of your name? ").lower()
+            q3 = input("What month were you born in? ").lower()
         except ValueError:
             print("Sorry, we did not recognize this input, please try again")
             continue
@@ -56,19 +56,19 @@ def quiz():
         fourth_range = 4
         list1.append(fourth_range)             
 #question 3 if statements using list 3 
-    if q3 in months_of_the_year[0]:
-        first_vegtable = 1 
-        list3.append(first_vegtable)
-    if q3 in months_of_the_year[1]:
-        second_vegtable = 2 
-        list3.append(second_vegtable)
-    if q3 in months_of_the_year[2]:
-        third_vegtable = 3
-        list3.append(third_vegtable)
-    if q3 in months_of_the_year[3]:
-        fourth_vegtable = 4
-        list3.append(fourth_vegtable)
-
+    if q3 in months_of_the_year[0:2]:
+        first_month_range = 1 
+        list3.append(first_month_range)
+    if q3 in months_of_the_year[3:5]:
+        second_month_range = 2 
+        list3.append(second_month_range)
+    if q3 in months_of_the_year[6:8]:
+        third_month_range = 3
+        list3.append(third_month_range)
+    if q3 in months_of_the_year[9:11]:
+        fourth_month_range = 4
+        list3.append(fourth_month_range)
+   
     if 1 in list2 and 1 in list1 and 1 in list3:
         print("The choice is obivious, you are...")
         time.sleep(1)
@@ -103,11 +103,15 @@ time.sleep(2)
 print("\n")
 print("Would you like to find out?")
 
-answer = input("Y/N: ")
-if answer == "Y" or 'y':
+#def stop_quiz():
+ #   print("Thanks for playing!" "\n We hope to see you again soon! \n Please leave a review")
+  #  sys.exit()
+
+answer = input("Y/N: ").lower()
+if answer == "Y" or "y":
     quiz()
 else:
-    stop_quiz()
-time.sleep(1)
-print("Thanks for playing \nCome back soon!")
+    answer == "N" or "n"
+    time.sleep(1)
+    print("Thanks for playing \nCome back soon!")
 
