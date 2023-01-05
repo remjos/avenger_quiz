@@ -107,7 +107,7 @@ print("Would you like to find out?")
  #   print("Thanks for playing!" "\n We hope to see you again soon! \n Please leave a review")
   #  sys.exit()
 
-answer = input("Y/N: ").lower()
+answer = str(input("Y/N: ").lower())
 if answer == "Y" or "y":
     quiz()
 else:
