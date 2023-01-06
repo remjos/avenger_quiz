@@ -107,15 +107,12 @@ print("Would you like to find out?")
  #   print("Thanks for playing!" "\n We hope to see you again soon! \n Please leave a review")
   #  sys.exit()
 
-answer = str(input("Y/N: ").lower())
-if answer == "Y" or "y":
-    quiz()
-if answer == "N" or "n":
+answer = (input("Y/N: ").lower())
+if answer == "Y" or answer == "y":
+    print("the answer is yes")
+else :
     time.sleep(1)
     print("Thanks for playing \nCome back soon!")
+    stop_quiz()
+    
  
-#test change 
-
-#another test commit 
-
-#matt miller test change with updated creds 
