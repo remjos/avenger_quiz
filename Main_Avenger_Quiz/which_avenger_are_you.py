@@ -110,8 +110,7 @@ print("Would you like to find out?")
 answer = str(input("Y/N: ").lower())
 if answer == "Y" or "y":
     quiz()
-else:
-    answer == "N" or "n"
+if answer == "N" or "n":
     time.sleep(1)
     print("Thanks for playing \nCome back soon!")
  
