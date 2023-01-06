@@ -108,7 +108,7 @@ print("Would you like to find out?")
   #  sys.exit()
 
 answer = (input("Y/N: ").lower())
-if answer == "Y" or "y":
+if answer == "Y" or answer == "y":
     print("the answer is yes")
 else :
     time.sleep(1)
