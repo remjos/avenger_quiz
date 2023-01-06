@@ -8,7 +8,7 @@ from birthday_month import months_of_the_year
 #function to start the quiz questions 
 
 def stop_quiz():
-    print("Thanks for playing!" "\n We hope to see you again soon! \n Please leave a review")
+    print("Thanks for playing!\nWe hope to see you again soon!\nPlease leave a review")
     sys.exit()
 
 def quiz():
@@ -112,7 +112,5 @@ if answer == "Y" or answer == "y":
     print("the answer is yes")
 else :
     time.sleep(1)
-    print("Thanks for playing \nCome back soon!")
     stop_quiz()
-    
  
