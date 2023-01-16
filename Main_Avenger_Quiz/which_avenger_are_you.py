@@ -23,10 +23,10 @@ def quiz():
         else:
             break
 
-               #vegtable_list = []
+            
     list1 = [] #this is to allow the range of first name characters to be assigend to a value
     list2 = [] #this is for the colors list to assign an avenger to it 
-    list3 = [] #this is the list for the vegtable questions
+    list3 = [] #the list for the birthday_month questions to be stored in 
 #todo add more colors to be including 
 #question 1 if statements using list 2
 
@@ -84,7 +84,7 @@ def quiz():
     if 4 in list1 and 4 in list2 and 4 in list3: 
         print("The choice is obivious, you are...")
         time.sleep(1)
-        print(avenger_list[3]) #this prints an boodie avenger
+        print(avenger_list[3]) #this prints black widow as the avenger
     
 #todo add the rest of the if statements and determine what avenger should go with what values 
     #elif list2[2] == 3 and list1[2] == 3 and list3[2] == 3:
@@ -110,7 +110,7 @@ print("Would you like to find out?")
 answer = (input("Y/N: ").lower())
 if answer == "Y" or answer == "y":
     quiz()
-else :
+else:
     time.sleep(1)
     stop_quiz()
  
