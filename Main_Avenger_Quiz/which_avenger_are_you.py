@@ -109,7 +109,7 @@ print("Would you like to find out?")
 
 answer = (input("Y/N: ").lower())
 if answer == "Y" or answer == "y":
-    print("the answer is yes")
+    quiz()
 else :
     time.sleep(1)
     stop_quiz()
