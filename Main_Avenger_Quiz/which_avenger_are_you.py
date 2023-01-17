@@ -5,6 +5,8 @@ from avengers_list1 import avenger_list
 import sys  
 from alpha_bet import american_alphabet
 from birthday_month import months_of_the_year
+import random
+
 #function to start the quiz questions 
 
 def stop_quiz():
@@ -69,22 +71,27 @@ def quiz():
         fourth_month_range = 4
         list3.append(fourth_month_range)
    
-    if 1 in list2 and 1 in list1 and 1 in list3:
+    if 1 or 2 or 3 or 4 in list2 and 1 or 2 or 3 or 4 in list1 and 1 or 2 or 3 or 4 in list3:
         print("The choice is obivious, you are...")
         time.sleep(1)
-        print(avenger_list[0]) #this prints captain america as avenger
-    if 2 in list2 and 2 in list1 and 2 in list3:
-        print("The choice is obivious, you are...")
-        time.sleep(1)
-        print(avenger_list[1]) #this prints iron man as avenger
-    if 3 in list2 and 3 in list1 and 3 in list3:
-        print("The choice is obivious, you are...")
-        time.sleep(1)
-        print(avenger_list[2]) #this prints thor as the avenger 
-    if 4 in list1 and 4 in list2 and 4 in list3: 
-        print("The choice is obivious, you are...")
-        time.sleep(1)
-        print(avenger_list[3]) #this prints black widow as the avenger
+        #print(avenger_list) 
+        choice = random.choice(avenger_list)
+        print(choice)
+        
+        #this prints captain america as avenger
+    #if 3 or 4 in list2 and 3 or 4 in list1 and 3 or 4 in list3:
+        #print("The choice is obivious, you are...")
+        #time.sleep(1)
+        #print(avenger_list[1]) #this prints iron man as avenger
+
+    #if 3 in list2 and 3 in list1 and 3 in list3:
+        #print("The choice is obivious, you are...")
+        #time.sleep(1)
+        #print(avenger_list[2]) #this prints thor as the avenger 
+    #if 4 in list1 and 4 in list2 and 4 in list3: 
+        #print("The choice is obivious, you are...")
+        #time.sleep(1)
+        #print(avenger_list[3]) #this prints black widow as the avenger
     
 #todo add the rest of the if statements and determine what avenger should go with what values 
     #elif list2[2] == 3 and list1[2] == 3 and list3[2] == 3:
@@ -107,7 +114,7 @@ print("Would you like to find out?")
  #   print("Thanks for playing!" "\n We hope to see you again soon! \n Please leave a review")
   #  sys.exit()
 
-answer = (input("Y/N: ").lower())
+answer = (input("Y/N: "))
 if answer == "Y" or answer == "y":
     quiz()
 else:
