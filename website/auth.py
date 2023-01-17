@@ -64,3 +64,8 @@ def signup():
             return redirect(url_for('views.home')) 
         
     return render_template("signup.html", user=current_user)
+
+@auth.route('/quiz', methods=['POST'])
+def quiz():
+    if request.method == 'POST':
+        return render_template("quiz.html")

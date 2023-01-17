@@ -73,46 +73,15 @@ def quiz():
    
     if 1 or 2 or 3 or 4 in list2 and 1 or 2 or 3 or 4 in list1 and 1 or 2 or 3 or 4 in list3:
         print("The choice is obivious, you are...")
-        time.sleep(1)
-        #print(avenger_list) 
+        time.sleep(1) 
         choice = random.choice(avenger_list)
         print(choice)
-        
-        #this prints captain america as avenger
-    #if 3 or 4 in list2 and 3 or 4 in list1 and 3 or 4 in list3:
-        #print("The choice is obivious, you are...")
-        #time.sleep(1)
-        #print(avenger_list[1]) #this prints iron man as avenger
-
-    #if 3 in list2 and 3 in list1 and 3 in list3:
-        #print("The choice is obivious, you are...")
-        #time.sleep(1)
-        #print(avenger_list[2]) #this prints thor as the avenger 
-    #if 4 in list1 and 4 in list2 and 4 in list3: 
-        #print("The choice is obivious, you are...")
-        #time.sleep(1)
-        #print(avenger_list[3]) #this prints black widow as the avenger
-    
-#todo add the rest of the if statements and determine what avenger should go with what values 
-    #elif list2[2] == 3 and list1[2] == 3 and list3[2] == 3:
-        #print("The choice is obivious, you are...")
-        #time.sleep(1)
-        #print(avenger_list[2]) #this prints thor as avenger
-            
-
-#question_1_list = my_color_list
-#make a fucntion for all the variables of the color names so that the if statement can 
-#be based on the color names instead of the values from the dictionary
-#def value_color_names():
-
+        print("Now, go live life today acting as", choice)
+                        
 print("Which Avenger do YOU think you are?")
 time.sleep(2)
 print("\n")
 print("Would you like to find out?")
-
-#def stop_quiz():
- #   print("Thanks for playing!" "\n We hope to see you again soon! \n Please leave a review")
-  #  sys.exit()
 
 answer = (input("Y/N: "))
 if answer == "Y" or answer == "y":

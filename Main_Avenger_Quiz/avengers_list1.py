@@ -1,1 +1,1 @@
-avenger_list = ['Captan America', 'Iron Man', 'Thor', 'Black Widow', 'Black Panther', 'Spiderman', 'Hulk', 'Hawkeye', "Ant-Man"]
+avenger_list = ['Captan America', 'Iron Man', 'Thor', 'Black Widow', 'Black Panther', 'Spiderman', 'Hulk', 'Hawkeye', 'Ant-Man', 'Captain Marvel', 'Blade', 'Doctor Strange', 'Ghost Rider', 'Sand Man']
