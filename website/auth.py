@@ -67,4 +67,4 @@ def signup():
 
 @auth.route('/quiz', methods=['GET', 'POST'])
 def quiz():
-    return redirect(url_for('auth.quiz'))
+    return render_template("quiz.html")
