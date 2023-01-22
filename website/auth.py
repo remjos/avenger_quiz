@@ -7,6 +7,7 @@ from flask_login import login_user, login_required, logout_user, current_user
 
 
 
+
 auth = Blueprint('auth', __name__)
 
 @auth.route('/login', methods=['GET', 'POST'])
@@ -68,3 +69,8 @@ def signup():
 @auth.route('/quiz', methods=['GET', 'POST'])
 def quiz():
     return render_template("quiz.html")
+
+@auth.route('/take_quiz', methods=['GET', 'POST'])
+def take_quiz():
+    return render_template("take_quiz.html")
+
