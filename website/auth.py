@@ -68,7 +68,9 @@ def signup():
 
 @auth.route('/quiz', methods=['GET', 'POST'])
 def quiz():
-    return render_template("quiz.html")
+    email = request.form.get('email')
+    user = User.query.filter_by(email=email).first()
+    return render_template("quiz.html", user=current_user)
 
 @auth.route('/take_quiz', methods=['GET', 'POST'])
 def take_quiz():
