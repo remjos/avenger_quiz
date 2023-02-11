@@ -33,6 +33,8 @@ def quiz():
 #todo add more colors to be including 
 #question 1 if statements using list 2
 
+    for answer in q1 
+
     if q1 in my_color_list[0]:
         first_color = 1
         list2.append(first_color)
