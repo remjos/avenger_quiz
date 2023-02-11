@@ -74,5 +74,8 @@ def quiz():
 
 @auth.route('/take_quiz', methods=['GET', 'POST'])
 def take_quiz():
-    return render_template("take_quiz.html")
+    return render_template("take_quiz.html", user=current_user)
 
+@auth.route('/show_movies', methods=['GET', 'POST'])
+def show_movies():
+    return render_template("show_movies.html", user=current_user)

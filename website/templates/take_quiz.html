@@ -1,34 +1,34 @@
+{% extends "base.html" %} {% block title %} Home {% endblock %} {%block content%}
+
 <!DOCTYPE html>
 
 <html>
-  <head> 
+  <head>
+    <h1 align="center">Get ready to start the quiz</h1>
 
-  <h1 align="center">Get ready to start the quiz</h1>
-
-  <h2
-    align="center"
-    img
-    src=("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.britannica.com%2Ftopic%2Fthe-Avengers-superhero-team&psig=AOvVaw2sJ2O9xCfwwttObNnbzNAy&ust=1675050544350000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCJj37djv6_wCFQAAAAAdAAAAABAD")
-    alt="Description for image"
-    width="250"
-    height="250"
-  ></h2>
-  </head> 
+    <h2
+      align="left"
+      width="250"
+      height="250"
+      
+    </h2>
+  </head>
   <body>
+    <img src="/static/toasted_logo.jpg" width="800" height="800" align="center"/>
+
     <form class="grid" method="POST">
-      <label for="answer" align="center">Do you want to start the quiz and find out which avenger YOU
-        are?</label
-      >
-      <button type="Submit" class="button" text="yesno">Yes</button> 
-      <button type="Submit" class="button" text="yesno">No</button>
-  
-      <input type="button" id='script' name="scriptbutton" value="Take Quiz" onclick="exec('python avenger_code.py');">
+      <label for="answer" align="center"></label>
+      <a href="/show_movies"> 
+      <button align="center" type="button" class="btn btn-primary"> 
+        Show Movies
+      </button> </a> 
+      <button align="center" type="Submit" class="btn btn-primary" text="yesno">
+       Show TV Shows
+      </button>
 
-      <center>
-
-      </center>
+      <center></center>
     </form>
   </body>
 </html>
 
-
+{% endblock %}
