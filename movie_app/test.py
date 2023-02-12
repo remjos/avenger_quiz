@@ -1,17 +1,20 @@
 import requests
+import json
 
-url = "https://gowatch.p.rapidapi.com/lookup/title/tmdb_id"
+url = "https://imdb8.p.rapidapi.com/auto-complete"
 
-querystring = {"id":"496243","type":"movie","country":"us"}
+querystring = {"q":"game"}
 
-payload = "id=496243&type=movie&country=us"
 headers = {
-	"content-type": "application/x-www-form-urlencoded",
-	"X-RapidAPI-Key": "20719788e5msh46d7f8c7ed9abd9p1d8da2jsnb3f8e9ee7b85",
-	"X-RapidAPI-Host": "gowatch.p.rapidapi.com"
+	"X-RapidAPI-Key": "dea9a5d159msha8ea04001912514p1cc719jsn81e0afc8ee63",
+	"X-RapidAPI-Host": "imdb8.p.rapidapi.com"
 }
 
-response = requests.request("POST", url, data=payload, headers=headers, params=querystring)
+response = requests.request("GET", url, headers=headers, params=querystring)
+
+# json = response.json()
+
+# image = json.get("l").get("imageUrl")
 
 print(response.text)
 
