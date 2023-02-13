@@ -83,4 +83,4 @@ def show_movies():
 @auth.route('/pick_a_flix', methods=['GET', 'POST'])
 def pick_flix():
     print('hello world')
-    return redirect(url_for(pick_a_flix))
+    return redirect(url_for(pick_flix))
