@@ -1,20 +1,36 @@
 import requests
 import json
+import pprint
+from bs4 import BeautifulSoup
 
-url = "https://imdb8.p.rapidapi.com/auto-complete"
 
-querystring = {"q":"game"}
+url = "https://utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com/lookup"
+
+# todo - put an input here to get a specific query for the user
+
+querystring = {"term": "startrek", "country": "us"}
 
 headers = {
-	"X-RapidAPI-Key": "dea9a5d159msha8ea04001912514p1cc719jsn81e0afc8ee63",
-	"X-RapidAPI-Host": "imdb8.p.rapidapi.com"
+    #where api goes
 }
 
-response = requests.request("GET", url, headers=headers, params=querystring)
+response = requests.request(
+    "GET", url, headers=headers, params=querystring).json()
 
-# json = response.json()
 
-# image = json.get("l").get("imageUrl")
 
-print(response.text)
+# data = response.json()
+
+
+#name = data['name']
+# picture = data['picture']
+
+# print(f"{name} has the picture of {picture}")
+#print(name)
+
+# where_to_watch = data['locations']
+# print(where_to_watch)
+# print(response.json())
+pprint.pprint(response)
+
 

@@ -66,11 +66,11 @@ def signup():
         
     return render_template("signup.html", user=current_user)
 
-@auth.route('/quiz', methods=['GET', 'POST'])
-def quiz():
+@auth.route('/movies', methods=['GET', 'POST'])
+def movies():
     email = request.form.get('email')
     user = User.query.filter_by(email=email).first()
-    return render_template("quiz.html", user=current_user)
+    return render_template("movies.html", user=current_user)
 
 @auth.route('/take_quiz', methods=['GET', 'POST'])
 def take_quiz():
